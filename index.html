@@ -1,73 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Name — Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Your Name</a>
-      <nav class="main-nav" aria-label="Primary">
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
-    </div>
-  </header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Logan Schuler — Home</title>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
 
-  <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <h1>Designing clear digital experiences</h1>
-          <p class="lede">I build usable websites and prototypes that prioritize accessibility, performance, and clarity. Available for contract and freelance work.</p>
-          <p><a class="btn" href="portfolio.html">View Portfolio</a> <a class="btn ghost" href="about.html">About Me</a></p>
-        </div>
-        <div class="hero-media">
-          <img src="images/hero.jpg" alt="Screenshot of a project" loading="lazy">
-        </div>
-      </div>
-    </section>
+	<body>
+		<!-- Site header -->
+		<header class="site-header">
+			<div class="container header-content">
+				<div class="logo-block">
+					<img src="images/logo.png" alt="LS Logo" class="logo-img" />
+					<div class="logo-text">
+						<span class="name">Logan</span>
+						<span class="name">Schuler</span>
+					</div>
+				</div>
 
-    <section class="featured container">
-      <h2>Featured Work</h2>
-      <div class="grid">
-        <article class="card">
-          <img src="images/photo1.jpg" alt="Project screenshot: e-commerce redesign">
-          <h3>Responsive Site for Local Business</h3>
-          <p>Role: Designer & Developer — Tools: Figma, HTML, CSS. Simplified navigation and improved mobile flow.</p>
-        </article>
+				<nav aria-label="Primary Navigation">
+					<ul class="nav-links">
+						<li><a class="active" href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-        <article class="card">
-          <img src="images/photo2.jpg" alt="Project screenshot: mobile app prototype">
-          <h3>Mobile App Prototype</h3>
-          <p>Role: UX/UI — Tools: Figma. Iterative prototype validated through user testing and three design passes.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+		<!-- Hero -->
+		<section class="hero">
+			<div class="hero-inner container">
+				<h1>Something very clever to say</h1>
+				<p>Welcome to my portfolio — showcasing selected work and process.</p>
+				<p>
+					<a class="btn-primary" href="portfolio.html">View My Work</a>
+				</p>
+			</div>
+		</section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Your Name — <a href="contact.html">Contact</a></p>
-    </div>
-  </footer>
-
-  <script>
-    // small interactions: update year & mobile nav
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const btn = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('.main-nav');
-    btn.addEventListener('click', () => {
-      const expanded = btn.getAttribute('aria-expanded') === 'true';
-      btn.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('open');
-    });
-  </script>
-</body>
+		<!-- Footer -->
+		<footer class="site-footer">
+			<div class="container">
+				<p>© 2025 Logan Schuler. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
 </html>
