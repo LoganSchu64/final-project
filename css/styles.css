@@ -1,7 +1,7 @@
 :root {
---emerald: #1C6E63;
---emerald-dark: #15574F;
---slate-light: #C7DEDA;
+--emerald: rgba(15, 118, 110, 1);
+--emerald-dark: rgba(1, 45, 28, 1);
+--slate-light: rgba(21, 110, 100, 0.3);
 --white: #fafafa;
 --text-dark: #0A0A0A;
 }
@@ -16,9 +16,9 @@
 
 .header-content > nav { margin-left: auto; }
 :root {
---emerald: #1C6E63;
---emerald-dark: #15574F;
---slate-light: #C7DEDA;
+--emerald: rgba(15, 118, 110, 1);
+--emerald-dark: rgba(1, 45, 28, 1);
+--slate-light: rgba(21, 110, 100, 0.3);
 --white: #fafafa;
 --text-dark: #0A0A0A;
 }
