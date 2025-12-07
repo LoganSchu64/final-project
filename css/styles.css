@@ -56,6 +56,35 @@ line-height: 1.1;
 color: #fafafa;
 }
 
+/* About page image */
+.about-photo {
+	max-width: 220px;
+	width: 100%;
+	border-radius: 12px;
+	display: block;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* About grid: heading above image, text to the right */
+.about-grid {
+	display: grid;
+	grid-template-columns: minmax(140px, 280px) 1fr;
+	grid-template-areas:
+		"heading heading"
+		"image text";
+	gap: 1.25rem;
+	align-items: start;
+}
+
+.about-heading { grid-area: heading; margin-bottom: 0.25rem; }
+.about-photo { grid-area: image; }
+.about-body { grid-area: text; }
+
+@media (max-width: 860px) {
+	.about-grid { grid-template-columns: 1fr; grid-template-areas: "heading" "image" "text"; }
+	.about-photo { justify-self: center; }
+}
+
 
 .nav-links {
 display: flex;
@@ -117,6 +146,42 @@ text-decoration: none;
 
 .btn-primary:hover {
 background: var(--emerald-dark);
+}
+
+/* Page-specific hero layouts */
+.hero--center .hero-inner { display:flex; flex-direction:column; align-items:center; text-align:center; }
+.hero--left .hero-inner   { display:flex; flex-direction:column; align-items:flex-start; text-align:left; }
+.hero--right .hero-inner  { display:flex; flex-direction:column; align-items:flex-end; text-align:right; }
+
+/* Layout for About page: place H1 above image and paragraph to the right */
+/* Targets the .hero--left variant (used on About) */
+.hero--left .hero-inner {
+	display: grid;
+	grid-template-columns: minmax(140px, 260px) 1fr;
+	grid-template-areas: "heading heading" "image text";
+	gap: 1rem 2rem;
+	align-items: start;
+}
+.hero--left .hero-inner > h1 { grid-area: heading; margin: 0; }
+.hero--left .hero-inner > img { grid-area: image; width: 100%; max-width: 220px; border-radius:12px; }
+.hero--left .hero-inner > p { grid-area: text; margin: 0; }
+
+@media (max-width: 860px) {
+	.hero--left .hero-inner {
+		grid-template-columns: 1fr;
+		grid-template-areas: "heading" "image" "text";
+		text-align: center;
+	}
+	.hero--left .hero-inner > img { justify-self: center; }
+}
+
+/* Split layout: text + media */
+.hero--split .hero-inner { display:grid; grid-template-columns:1fr 420px; gap:2rem; align-items:center; }
+.hero--split .hero-media img { width:100%; height:auto; border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,0.12); }
+
+@media (max-width: 860px) {
+	.hero--split .hero-inner { grid-template-columns:1fr; }
+	.hero--right .hero-inner, .hero--left .hero-inner { align-items:center; text-align:center; }
 }
 
 

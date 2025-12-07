@@ -11,7 +11,7 @@
     <!-- Site header -->
     <header class="site-header">
       <div class="container header-content">
-        <a href="index.html" class="logo-block" style="text-decoration:none;">
+        <a href="index.html" class="logo-block">
           <img src="images/logovector.png" alt="LS Logo" class="logo-img" />
           <div class="logo-text">
             <span class="name">Logan</span>
@@ -30,11 +30,26 @@
       </div>
     </header>
 
-    <!-- Hero (shared) -->
-    <section class="hero">
-      <div class="grid">
+    <!-- Hero (shared, split) -->
+    <section class="hero hero--split">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Selected Projects</h1>
+          <p>A selection of recent work focused on clarity and usability.</p>
+          <p><a class="btn-primary" href="contact.html">Get In Touch</a></p>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/photo3.jpg" alt="Project showcase" />
+        </div>
+      </div>
+    </section>
+
+    <main class="container" id="main">
+      <section class="projects" style="padding:2.5rem 0;">
+        <div class="grid">
           <article class="card">
-            <img src="images/.jpg" alt="Project 1" />
+            <img src="images/photo1.jpg" alt="Project 1" />
             <h3>Project One</h3>
             <p>Short description of the project and your role.</p>
           </article>
@@ -45,7 +60,8 @@
             <p>Short description of the project and outcome.</p>
           </article>
         </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <div class="container">
