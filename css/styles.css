@@ -31,6 +31,18 @@ color: white;
 border-radius: 0 0 30px 30px;
 margin-top: 1px;}
 
+.logo-block {
+	display: flex;
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.logo-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .logo-img {
 width: 65px;
 height: 65px;
