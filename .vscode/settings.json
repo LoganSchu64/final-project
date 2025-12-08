@@ -1,6 +1,0 @@
-{
-  "editor.unusualLineTerminators": "off",
-  "files.associations": {
-    "*.pdf": "binary"
-  }
-}
