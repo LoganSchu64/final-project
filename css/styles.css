@@ -79,12 +79,12 @@
 
 .hero-inner h1 {
 	font-size: 3rem;
-	color: var(--white);
+	color: #0A0A0A;);
 	margin-bottom: 20px;
 }
 
 .hero-inner p {
-	color: #f0f0f0;
+	color: #0A0A0A;
 	margin-bottom: 45px;
 }
 
@@ -148,7 +148,6 @@
 
 .portfolio-heading {
 	font-size: 3rem;
-	color: var(--white);
 	margin: 0;
 	text-align: center;
 }
@@ -170,7 +169,6 @@
 }
 
 .pdf-title {
-	color: var(--white);
 	font-weight: 600;
 	font-size: 1rem;
 	margin: 0;
@@ -178,7 +176,6 @@
 }
 
 .pdf-subtitle {
-	color: #f0f0f0;
 	font-size: 0.9rem;
 	margin: 0;
 	text-align: center;
@@ -207,20 +204,6 @@
 	cursor: not-allowed;
 }
 
-.coming-soon-title {
-	color: var(--text-dark);
-	font-weight: 600;
-	font-size: 1.1rem;
-	margin: 0;
-}
-
-.coming-soon-subtitle {
-	color: var(--text-dark);
-	font-size: 0.9rem;
-	margin: 0;
-	opacity: 0.7;
-}
-
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -232,7 +215,7 @@
 }
 
 .contact-form label {
-	color: var(--white);
+	color: #0A0A0A;
 	font-weight: 600;
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
